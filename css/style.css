@@ -1,0 +1,526 @@
+/*
+CSS reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* header section  */
+header {
+  background-color: #00FFFF;
+  height: 36em;
+
+
+}
+
+.page2 {
+  background-color: #00FFFF;
+
+}
+
+nav {
+  /* border-bottom: 3px solid #FF5E00; */
+  background-color: #c2ffff;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+ nav a {
+  color: #000;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:active, nav a:hover {
+  border-bottom: 2px solid #FF5E00;
+  color: #FF5E00;
+
+}
+
+li {
+  /* display: inline-block; */
+  padding: 2em 4em;
+  position: sticky;
+  text-align: center;
+
+
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+
+.photo{
+  height: 120px;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  padding-top: 3em;
+}
+
+.name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+.about {
+  /* background-color: #FF5E00; */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.about p {
+  /* background-color: #FF5E00; */
+  margin: 0 auto;
+  padding: 1em;
+  width: 60%;
+
+}
+
+.caption {
+  display: block;
+}
+header p {
+  font-family: helvetica, arial, sans-serif;
+  padding-top: 15px;
+}
+
+.about-button {
+  background-color: white;
+  border-radius: 3em;
+  border: none;
+  color: black;
+  display: block;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: .05em;
+  margin: 2em auto;
+  padding: 1.3em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 30%;
+
+
+
+}
+
+.about-button:hover {
+  background-color: #FF5E00;
+  color: white;
+}
+
+.div-image {
+  width: 20%;
+  position: relative;
+  left: 60em;
+  top: -20em;
+  opacity: 0.8;
+
+
+
+}
+
+/* main section  */
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #fffffc;
+}
+
+/* h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+  text-shadow: 0.04em 0.04em #b3bfbf;
+} */
+
+.main-title {
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.portfolio-img {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+hr {
+  background-color: #00FFFF;
+  border: none;
+  height: 0.5em;
+  margin: 8em auto;
+  width: 2%;
+
+
+}
+
+/*Portfolio*/
+
+.project a {
+  text-decoration: none;
+  color: #000;
+}
+
+.project {
+  align-items: center;
+  background-color: #00FFFF;
+  display: flex;
+  height: 35em;
+  justify-content: center;
+  margin: 0 1em;
+  padding:2em;
+  width: 33%;
+}
+
+.center {
+  vertical-align: middle;
+}
+
+.project:hover {
+  box-shadow: 0.6em 0.6em 1em #b3bfbf;
+}
+
+.portfolio-title {
+  text-transform: uppercase;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.project-description {
+  font-family: helvetica, arial, sans-serif;
+  /* height: 20em; */
+  left: 1.7em;
+  line-height: 1.3em;
+  padding-top: 0;
+  position: relative;
+  width: 85%;
+
+}
+
+.portfolio-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 1em;
+  width: 90%;
+
+}
+
+
+
+.portfolio-img {
+  -text-align: center;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 2em;
+
+}
+
+.button-project-info {
+    background-color: white;
+    border-radius: 3em;
+    display: block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    margin: 1em auto;
+    padding: 1em 2em;
+    text-align: center;
+    width: 30%;
+
+}
+
+.button-project-info:hover {
+  background-color: #FF5E00;
+  color: white;
+}
+/*
+ .button1 {
+  position: relative;
+  top: 5.5em;
+} */
+
+
+
+/* Skills */
+
+.skills-heading {
+  margin-bottom: 5em;
+}
+
+.skills-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.skills {
+  height: 18em;
+  /* background-color:#00FFFF; */
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  width: 33%;
+}
+
+/* .skills:hover {
+  background-color: #bedede;
+} */
+
+
+
+.skill-title {
+
+  font-weight: bold;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 0.9em;
+  margin: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills-img {
+  margin: 0 auto;
+  width: 10em;
+  /* height: 10em; */
+}
+
+.wordpress-logo {
+  /* width: 12em; */
+  height: 10em;
+}
+.html-logo {
+  position: relative;
+  top: -1em;
+  width: 12em;
+}
+
+
+
+
+.img-container {
+  height: 10em;
+  margin: 0 auto;
+  width: 10em;
+
+}
+
+.webdesign-ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.skills-description {
+  background-color: #00FFFF;
+  border: 1px solid #bedede;
+  border-radius: 2em;
+  display: none;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.3em;
+  padding: 1em;
+}
+
+
+
+.skills:hover  .skills-description {
+  display: block;
+}
+
+
+
+/* contact */
+
+form {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+
+
+fieldset {
+  margin: 0 auto;
+  width: 60%;
+
+}
+
+form input, textarea {
+  border: 2px solid #00FFFF;
+  display: block;
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  text-align: center;
+
+}
+
+.label-name {
+  margin-top: 0;
+}
+
+input, textarea, select, button {
+
+  box-sizing: border-box;
+}
+
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+
+.button {
+  background-color: #00FFFF;
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  margin: 3em auto 7em auto;
+  text-transform: uppercase;
+  padding: 1.3em 2em;
+  width: 14em;
+}
+
+.button:hover {
+  background-color: #FF5E00;
+
+  color: white;
+
+}
+
+
+/* footer section  */
+
+footer{
+
+  background-color: #00FFFF;
+  height: 25em;
+}
+
+footer p {
+  font-family: helvetica, arial, sans-serif;
+  margin-top: 5em;
+  text-align: center;
+
+}
+
+.social-media {
+  display: block;
+  margin: 0 auto;
+  padding-top: 12em;
+  text-align: center;
+  width: 90%;
+}
+
+.social-media img {
+  border-radius: 2em;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  width: 3%;
+}
+
+/* .social-media img:hover {
+  width: 2em;
+} */
+
+
+/*Projects page*/
+
+.project1 {
+  background-color: red;
+}
+
+
+.social-media a:hover {
+  border-bottom: 3px solid #FF5E00;
+}
