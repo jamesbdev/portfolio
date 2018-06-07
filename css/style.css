@@ -115,10 +115,10 @@ nav ul {
 }
 
 .name {
-  text-align: center;
-  text-transform: uppercase;
   font-size: 1.5em;
   padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .about {
@@ -147,8 +147,8 @@ header p {
 
 .about-button {
   background-color: white;
-  border-radius: 3em;
   border: none;
+  border-radius: 3em;
   color: black;
   display: block;
   font-family: helvetica, arial, sans-serif;
@@ -170,39 +170,36 @@ header p {
 }
 
 .div-image {
-  width: 20%;
-  position: relative;
   left: 60em;
-  top: -20em;
   opacity: 0.8;
-
-
-
+  position: relative;
+  top: -20em;
+  width: 20%;
 }
 
 /* main section  */
 
-*:focus {
+/* *:focus {
   outline: none;
-}
+} */
 
 body {
   background-color: #fffffc;
 }
 
-/* h2 {
+h2 {
   font-size: 1.3em;
   text-transform: uppercase;
   text-align: center;
   padding-top: 50px;
-  font-weight: bold;
-  text-shadow: 0.04em 0.04em #b3bfbf;
-} */
+  /* font-family: Helvetica; */
+  font-weight: 600;
+}
 
 .main-title {
   font-size: 2.5em;
-  margin-top: 2em;
   margin-bottom: 2em;
+  margin-top: 2em;
   text-align: center;
   text-transform: uppercase;
 
@@ -227,8 +224,8 @@ hr {
 /*Portfolio*/
 
 .project a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 
 .project {
@@ -251,12 +248,12 @@ hr {
 }
 
 .portfolio-title {
-  text-transform: uppercase;
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
-  margin-top: 1em;
   margin-bottom: 0.5em;
+  margin-top: 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .project-description {
@@ -283,11 +280,10 @@ hr {
 
 
 .portfolio-img {
-  -text-align: center;
   display: block;
-  width: 85%;
   margin: 0 auto;
   padding-top: 2em;
+  width: 85%;
 
 }
 
@@ -323,11 +319,12 @@ hr {
 }
 
 .skills-container {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
-  padding: 1em;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+  width: 80%;
+
 }
 
 .skills {
@@ -346,10 +343,9 @@ hr {
 
 
 .skill-title {
-
-  font-weight: bold;
   font-family: helvetica, arial, sans-serif;
   font-size: 0.9em;
+  font-weight: bold;
   margin: 1em 0;
   text-align: center;
   text-transform: uppercase;
@@ -388,7 +384,6 @@ hr {
 
 .skills-description {
   background-color: #00FFFF;
-  border: 1px solid #bedede;
   border-radius: 2em;
   display: none;
   font-family: helvetica, arial, sans-serif;
@@ -428,6 +423,12 @@ form input, textarea {
   width: 100%;
 }
 
+form input:focus, textarea:focus {
+  border: 2px solid #FF5E00;
+  outline: none;
+
+}
+
 form label {
   display: block;
   font-family: helvetica, arial, sans-serif;
@@ -465,8 +466,8 @@ textarea {
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
   margin: 3em auto 7em auto;
-  text-transform: uppercase;
   padding: 1.3em 2em;
+  text-transform: uppercase;
   width: 14em;
 }
 
