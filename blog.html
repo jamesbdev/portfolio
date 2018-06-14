@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="blog">
+  <div class="grid-container">
   <header class="blog-header">
     <nav class="main-nav">
       <ul>
@@ -19,24 +20,60 @@
         <!-- <li><a href="#media">Media</a></li> -->
       </ul>
   </nav>
+
   <div class="blog-description">
   <h1>Blog</h1>
   <p>This is a blog I wrote while attending the Web Design course at Training Dragon</p>
   </div>
+
+  </header>
+  <aside>
     <nav class="blog-nav">
+      <h3>Blog sections</h3>
       <ul>
         <li><a href="#graphic-design">Graphic Design</a></li>
-        <li>Web Design</li>
-        <li>Front-end development tools</li>
+        <li><a href="#web-design">Web Design</a></li>
+        <li><a href="#">Introduction to programming</a></li>
+        <li><a href="#">JavaScript & Jquery</a></li>
+        <li><a href="#">Front-end development tools</a></li>
+        <li><a href="#">Intro to MySQL</a></li>
       </ul>
     </nav>
-  </header>
+</aside>
+  <main>
+    <article>
+      <h2 id="graphic-design">Graphic Design</h2>
 
-  <h2 id="graphic-design">Graphic Design</h2>
-  <h3>Day 1</h3>
-  <p>Today we talked about basic tools in Photoshop, such as how to draw shapes, colour them and how to write text and format it. The trainer also showed us how to set up a document for print. Later we started a small project to see how to use masking in photoshop. Masking is used to blend an image on another background. </p>
-  <h3>Day2</h3>
-  <p>Today we covered how to select elements, clone parts of the image, how to cut an image from it’s background. How to take away parts of an image. We also covered editing tools like smudge and other tools to bring out more or take out light from a part of the picture. Finally we created a JPEG banner using effects and placing different images together.
+      <h3>Day 1</h3>
+        <p>Today we talked about basic tools in Photoshop, such as how to draw shapes, colour them and how to write text and format it. The trainer also showed us how to set up a document for print. Later we started a small project to see how to use masking in photoshop. Masking is used to blend an image on another background. </p>
+      <h3>Day 2</h3>
+        <p>Today we covered how to select elements, clone parts of the image, how to cut an image from it’s background. How to take away parts of an image. We also covered editing tools like smudge and other tools to bring out more or take out light from a part of the picture. Finally we created a JPEG banner using effects and placing different images together.
+        </p>
+      <h3>Day 3</h3>
+        <p>In day 3 of the class we covered an intro to Illustrator software. We practiced drawing basic shapes and modifying them. Illustrator is a software for working with vector shapes. It is useful for designing logos because vectors keep their quality even when they are stretched. </p>
+      <h3>Day 4</h3>
+        <p>In day 4 we covered Adobe's InDesign software, which is used to create document layouts. We learned to use the basic tools and designed a business card. InDesign seems like the most straightforward software of the three.</p>
+    </article>
+    <article>
+      <h2>Web Design</h2>
+        <h3>Day 4</h3>
+          <p>Today we started creating our own web design projects. Firstly we created a drawing of our web page for confirmation by our trainer Emiliano. Once the drawing was okay we started creating the files and coding the layout for our website. I decided to make a one page portfolio website that I could use later. I discovered that CSS is more tricky than it looks and as our trainer mentioned it helps to practice a lot. I am going to continue working on the project we started in class and also take a look at reproducing web pages or magazines layout in HTML/CSS.</p>
+
+<p>I also learned about Flex-box to create layouts, going over the MDN documentation. It seems more handy than using floats for creating layouts.
+
+We also did an introduction to JavaScript where we used JavaScript click event handlers to load image backgrounds for an image gallery. I look forward to using JS more in the future to create galleries and dynamic menus.
 </p>
+    </article>
+</main>
+<footer>
+
+  <div class="social-media" id="media">
+    <!-- <a href="https://dribbble.com/" target="a_blank"><img src="images/social-media/social-1_logo-dribbble.svg" alt="dribble-icon"></a> -->
+    <a href="https://github.com/jaybaybremner" target="a_blank"><img src="images/social-media/social-1_logo-github.svg" alt="github-icon"></a>
+    <!-- <a href="https://www.pinterest.co.uk/" target="_blank"><img src="images/social-media/social-1_logo-pinterest.svg" alt="pinterest-icon"></a> -->
+    <p>Copyright &copy; James Bremner 2018</p>
+</div><!--social media-->
+</footer>
+</div><!--grid container-->
 </body>
 </html>
