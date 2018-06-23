@@ -55,10 +55,10 @@ table {
 
 /* header section  */
 header {
-  /* background-color: #69d2e7; */
+  background-color: #69d2e7;
   height: 36em;
-  /* background-image: linear-gradient(to right,#69d2e7, #FF5E00); */
-  /* background-image: url("video/trees.mp4"); */
+  background-image: linear-gradient(to right,#69d2e7, #FF5E00);
+  /* background-image: url("images/header/seoul.jpg"); */
 
 }
 
@@ -70,19 +70,17 @@ header {
 .main-nav {
   /* border-bottom: 3px solid #FF5E00; */
   /* background-color: #c2ffff; */
-  /* background-color: #A7DBD8; */
-
+  background-color: #A7DBD8;
   display: flex;
   /* opacity: 0.95; */
   position: fixed;
   top: 0;
-	margin-left: 35em;
-  width: 60%;
+  width: 100%;
   z-index: 10;
 }
 
  nav a {
-  color: #ccf;
+  color: #000;
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -97,7 +95,7 @@ nav a:active, nav a:hover {
 
 li {
   /* display: inline-block; */
-  padding: 2em 2em;
+  padding: 2em 4em;
   position: sticky;
   text-align: center;
 
@@ -113,13 +111,13 @@ nav ul {
 }
 
 
-/* .photo{
+.photo{
   border: 4px solid #fff;
   height: 120px;
   margin-bottom: 1em;
   margin-top: 3em;
   /* padding-top: 3em; */
-} */
+}
 
 .name {
   font-size: 1.5em;
@@ -130,18 +128,13 @@ nav ul {
 
 .about {
   /* background-color: #FF5E00; */
-	color: #fff;
   display: block;
   margin: 5em auto 0 auto;
   text-align: center;
-  width: 100%;
+  width: 50%;
 }
-.about-description {
-	width: 100%;
-	height: 10em;
-	background-color: navy;
-}
-.about-description p {
+
+.about p {
   /* background-color: #FF5E00; */
   margin: 0 auto;
   padding: 1em;
@@ -187,15 +180,6 @@ header p {
   position: relative;
   top: -20em;
   width: 20%;
-}
-
-video {
-	position: relative;
-	z-index:-1;
-	top:-30em;
-	right: 0;
-	width: 100%;
-	/* height: 45em; */
 }
 
 /* main section  */
