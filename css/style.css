@@ -652,7 +652,7 @@ padding: 1em;
 	height: 300px;
 }
 
-.projects-page .project1 {
+.projects-page .projectContainer {
 	display: flex;
 	flex-direction: row;
 }
@@ -687,8 +687,17 @@ padding: 1em;
 	color: white;
 }
 
-.description-content{
+.projectDescription{
 	display: grid;
+	position:relative;
+	top: 8em;
+	padding-left: 1em;
 	grid-template-columns: 10% 70%;
 	grid-template-rows: 20% 10% 10%;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.projectDescription h4{
+	/* font-size: 1.3em; */
+	font-weight: 600;
 }
