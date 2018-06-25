@@ -378,8 +378,6 @@ hr {
 }
 
 
-
-
 .img-container {
   height: 10em;
   margin: 0 auto;
@@ -524,13 +522,6 @@ footer p {
   width: 2em;
 } */
 
-
-
-
-
-
-
-
 /***** BLOG PAGE *****/
 
 .blog h1 {
@@ -546,9 +537,14 @@ footer p {
 }
 
 .blog-header {
-	height: 25em;
+	height: 28em;
 	/* grid-row: 1/2;
 	grid-column: 1/4; */
+}
+
+.blog-header-img {
+	width: 300px;
+	border: 3px solid white;
 }
 
 
@@ -611,6 +607,8 @@ padding: 1em;
 	padding: 1em;
 }
 
+
+
 /****** PROJECTS PAGE *******/
 
 .projects-page nav {
@@ -636,4 +634,61 @@ padding: 1em;
 	border: 3px solid white;
 	width: 350px;
 	display: block;
+}
+
+.projects-page h1{
+	font-size: 2em;
+	text-align: center;
+	margin-top: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.projects-page h2 {
+	text-align: left;
+}
+
+.projects-page img {
+	height: 300px;
+}
+
+.projects-page .project1 {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.project-image {
+	margin-left: 1em;
+}
+
+.project-image h2{
+	margin: 1em;
+}
+
+.project-image a {
+	background-color: #69d2e7;
+  border: none;
+  border-radius: 3em;
+  color: black;
+  display: block;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: .05em;
+  margin: 2em auto;
+  padding: 1.3em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 30%;
+	text-align: center;
+}
+
+.project-image a:hover {
+	color: white;
+}
+
+.description-content{
+	display: grid;
+	grid-template-columns: 10% 70%;
+	grid-template-rows: 20% 10% 10%;
 }
