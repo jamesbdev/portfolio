@@ -57,17 +57,11 @@ table {
 header {
   background-color: #69d2e7;
   height: 34em;
-  /* background-image: linear-gradient(to right,#69d2e7, #FF5E00); */
-  background: url("../images/header/cool-wallpaper-dawn-dusk-66997.jpg") center fixed no-repeat;
-	background-size: 100%;
+  background: url("../images/header/bubble-clean-clear-1028600.jpg") center fixed no-repeat;
+	background-size: cover;
+
 
 }
-
-/* .homepageHeader {
-	width: 100%;
-	height: 36em;
-	z-index: -10;
-} */
 
 .page2 {
   background-color: #69d2e7;
@@ -75,19 +69,17 @@ header {
 }
 
 .main-nav {
-  /* border-bottom: 3px solid #FF5E00; */
-  /* background-color: #c2ffff; */
-  background-color: #A7DBD8;
+
+  /* background-color: #A7DBD8; */
   display: flex;
-  /* opacity: 0.95; */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index: 10;
 }
 
  nav a {
-  color: #000;
+  color: #fff;
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -136,8 +128,10 @@ nav ul {
 .about {
   /* background-color: #FF5E00; */
   display: block;
-  margin: 5em auto 0 auto;
+  margin: 2em auto 0 auto;
   text-align: center;
+	position: relative;
+	/* top: 10em; */
   width: 50%;
 }
 
@@ -191,9 +185,6 @@ header p {
 
 /* main section  */
 
-/* *:focus {
-  outline: none;
-} */
 
 body {
   background-color: #fffffc;
@@ -542,7 +533,11 @@ footer p {
 .blog-description {
 	position: relative;
 	text-align: center;
-	top: 10em;
+	top: 5em;
+}
+.blog-description h1 {
+	margin-bottom: 1em;
+
 }
 
 .blog-header {
@@ -585,7 +580,7 @@ footer p {
 .blog h3{
 font-size: 1.4em;
 font-family: helvetica, arial, sans-serif;
-/* text-align: center; */
+text-align: center;
 padding: 1em;
 }
 
@@ -621,7 +616,7 @@ padding: 1em;
 /****** PROJECTS PAGE *******/
 
 .projects-page nav {
-	background-color: #69d2e7;
+	/* background-color: #69d2e7; */
 	display: flex;
 }
 
