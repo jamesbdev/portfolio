@@ -56,8 +56,8 @@ table {
 /* header section  */
 header {
   background-color: #69d2e7;
-  height: 34em;
-  background: url("../images/header/bubble-clean-clear-1028600.jpg") center fixed no-repeat;
+  height: 45em;
+  background: url("../images/header/coding.jpg") center fixed no-repeat;
 	background-size: cover;
 
 
@@ -132,7 +132,9 @@ nav ul {
   text-align: center;
 	position: relative;
 	/* top: 10em; */
-  width: 50%;
+  width: 100%;
+	font-size: 2.5em;
+	color: white;
 }
 
 .about p {
