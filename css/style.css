@@ -694,3 +694,80 @@ padding: 1em;
 .projects-page hr {
 	margin: 5em auto;
 }
+
+
+/********** portfolio pages *******/
+
+.portfolio-main-title {
+	font-size: 3em;
+	text-align: center;
+	color: #4e1160;
+	/* font-family: serif; */
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+
+.portfolio-subheading {
+	font-size: 2em;
+	text-align: center;
+	margin: 1em 0;
+}
+
+/* .portfolio.page.img {
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+} */
+
+.portfolio-flex-container{
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	/* justify-content: space-around; */
+
+}
+
+.portfolio-h3 {
+	color: #4e1160;
+	text-align: center;
+	margin: 1em 0;
+	font-size: 2em;
+}
+
+.portfolio-page {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.project-brief {
+	width: 45%;
+}
+
+.portfolio-project-description {
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.technologies {
+	margin-bottom: 3em;
+}
+.technologies-li {
+	padding: 0.5em;
+
+}
+
+.technologies-ul {
+	list-style-type: disc;
+}
+
+.portfolio-close{
+	width: 5%;
+	position: relative;
+	top: 2em;
+	left: 50em;
+}
+
+.large-thumbnail {
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+}
