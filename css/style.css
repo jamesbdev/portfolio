@@ -51,6 +51,10 @@ table {
 	border-spacing: 0;
 }
 
+body, html {
+	width: 100%;
+}
+
 
 /* header section  */
 
@@ -58,7 +62,6 @@ header {
   background: linear-gradient(rgba(71,15,83,0.5), rgba(71,15,83,0.5)
 	),
 	url("../images/header/coding.jpg") center fixed no-repeat;
-	/* background-color: rgba(0,0,0,0,5); */
 	background-size: cover;
 	height: 45em;
 	width: 100%;
@@ -81,8 +84,8 @@ header {
 }
 
 nav a:active, nav a:hover {
-  border-bottom: 2px solid #FF5E00;
-  color: #FF5E00;
+  border-bottom: 2px solid  #ffccff;
+  color:  #ffccff;
 
 }
 
