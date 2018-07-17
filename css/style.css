@@ -94,6 +94,11 @@ nav a:active, nav a:hover {
 
 }
 
+.selected {
+	border-bottom: 2px solid  #ffccff;
+	color:  #ffccff;
+}
+
 li {
   padding: 2em 4em;
   position: sticky;
@@ -125,7 +130,7 @@ nav ul {
 
 .about {
   display: block;
-  margin: 2em auto;
+  margin: 1.5em auto 2em auto;
   text-align: center;
 	position: relative;
   width: 100%;
@@ -146,6 +151,8 @@ nav ul {
 	font-size: 0.5em;
 	width: 60%;
 	margin: 0 auto;
+	line-height: 1.2em;
+
 }
 
 .caption {
@@ -180,7 +187,22 @@ header p {
 	.about-description{
 		display: none;
 	}
+
+	header {
+		height: 40em;
+	}
+} /*@media*/
+
+
+@media only screen and (max-width:400px){
+   header{
+		 height: 50em;
+
+	 }
 }
+
+
+
 
 
 /***** main section  *****/
@@ -206,9 +228,6 @@ h2 {
   text-transform: uppercase;
 	color: #4e1160;
 }
-
-
-
 
 
 hr {
@@ -239,7 +258,7 @@ hr {
 
 .center {
   vertical-align: middle;
-	height: 20em;
+	height: 15em;
 }
 
 .portfolio-title {
@@ -280,7 +299,7 @@ hr {
 	width: 80%;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
 	.portfolio-container{
 		flex-direction: column;
 	}
@@ -353,6 +372,14 @@ hr {
 
 }
 
+@media screen and (max-width: 720px){
+	.skills-container {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
+
 /***** contact section *****/
 
 form {
@@ -367,6 +394,8 @@ fieldset {
   width: 60%;
 
 }
+
+
 
 form input, textarea {
   border: 2px solid #4e1160;
@@ -430,6 +459,18 @@ textarea {
 
 }
 
+@media screen and (max-width: 840px){
+	fieldset{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 520px){
+	fieldset{
+		width: 85%;
+	}
+}
+
 
 /******* footer section  *******/
 
@@ -486,45 +527,59 @@ footer p {
 }
 
 
+
 .blog-header {
 	height: 32em;
-
+	grid-area: h;
 }
+
+
 
 .blog-header-img {
 	width: 300px;
 	border: 3px solid white;
 }
 
+.blog {
+	display: grid;
+	grid: "h h h"
+				"a a b"
+				"f f f";
+
+	grid-gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
 
 .blog main {
 	font-family: helvetica, arial, sans-serif;
-
-	display: grid;
-	grid: "h h h"
-	      "a a b"
-				"f f f";
-	grid-gap: 1em;
-	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0 1em;
+	grid-area: a;
+	background-color: #f9b79d;
 }
 
 .blog-nav {
-	border: 2px dotted #69d2e7;
-	background-color: #69d2e7;
+	/* border: 2px dotted #4e1160; */
+	color: #000;
+	background-color: #c04848;
 	grid-area: b;
 	margin-right: 1em;
+}
+
+.welcomeTitle {
+	font-size: 2em;
+	padding: 1em;
 }
 
 
 .blog h2{
 	padding-bottom: 1em;
+	font-family: serif;
 }
 
 .blog h3{
 font-size: 1.4em;
 font-family: helvetica, arial, sans-serif;
-text-align: center;
 padding: 1em;
 }
 
@@ -534,16 +589,15 @@ padding: 1em;
 }
 
 .blog footer {
-	grid-row: 3/3;
-	grid-column: 1/4;
+	grid-area: f;
 }
 
-.blog article {
-	background-color: #E0E4CC;
-	grid-area: a;
+
+.blogNavTitle {
+	text-align: center;
+	color: white;
 
 }
-
 .blog-nav > ul {
 	display:flex;
 	flex-direction: column;
@@ -552,7 +606,39 @@ padding: 1em;
 .blog-nav li {
 	display: block;
 	padding: 1em;
+	line-height: 1.4em;
 }
+
+.blogImage {
+	width: 300px;
+	border: 3px solid white;
+	display: block;
+	margin: 1em auto;
+}
+
+.noBorderImg {
+	border: none;
+	width: 300px;
+	display: block;
+	margin: 1em auto 2em auto;
+}
+
+.blog-nav-link:hover {
+	color: white;
+}
+
+@media screen and (max-width: 520px){
+	.blog-description p{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 370px){
+	.blog-main-title {
+		display: none;
+	}
+}
+
 
 
 
