@@ -1,20 +1,22 @@
 (function() {
 
 
+/* @name scrollToLink
+@desc to create a scrolling effect on links */
+const scrollToLink = function(){
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+    }; //scrollToLink
 
 
-$('a[href^="#"]').on('click', function(event){
-
-  let target = $(this.getAttribute('href'));
-
-  if(target.length){
-    event.preventDefault();
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top
-    },1000);
-  }//if statement
-//on click
-}) // on click function
 
 
 
@@ -24,7 +26,7 @@ $('a[href^="#"]').on('click', function(event){
 //init function
 
   const init = function(){
-
+    scrollToLink();
   };//init
-
+init();
 }());

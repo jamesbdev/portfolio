@@ -238,6 +238,35 @@ hr {
   width: 2%;
 }
 
+.toNav {
+	width: 20%;
+	/* position: relative; */
+	left: 65em;
+	top: -10em;
+	margin: 0 auto 2em auto;
+	text-align: center;
+}
+
+.linkToNav {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	color: black;
+	font-weight: 500;
+
+}
+
+.linkToNav:hover{
+	border-bottom: 2px solid black;
+
+}
+
+.arrowIcon{
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+}
+
 
 /****** Portfolio section ******/
 
@@ -472,6 +501,8 @@ textarea {
 }
 
 
+
+
 /******* footer section  *******/
 
 footer{
@@ -551,11 +582,21 @@ footer p {
 
 }
 
+@media screen and (max-width: 560px){
+	.blog{
+		grid: "h h h"
+		      "b b b"
+					"a a a"
+					"f f f";
+	}
+}
+
 .blog main {
 	font-family: helvetica, arial, sans-serif;
 	margin: 0 1em;
 	grid-area: a;
 	background-color: #f9b79d;
+	padding: 1em;
 }
 
 .blog-nav {
@@ -563,7 +604,14 @@ footer p {
 	color: #000;
 	background-color: #c04848;
 	grid-area: b;
-	margin-right: 1em;
+	margin: 0 1em;
+	padding: 1em;
+}
+
+.blog-linkToNav {
+	position: sticky;
+	top: 200px;
+	right: 60px;
 }
 
 .welcomeTitle {

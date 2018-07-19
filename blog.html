@@ -45,7 +45,7 @@
     </ul>
   </nav>
 <main>
-    <h1 class="welcomeTitle">Welcome to my blog!</h1>
+    <h1 class="welcomeTitle" id="blog-title">Welcome to my blog!</h1>
     <article>
       <h2 id="graphic-design">Graphic Design</h2>
       <img src="images/blog/graphicdesign.png" alt="computer and pencils" class="blogImage">
@@ -59,6 +59,12 @@
         <p>In day 3 of the class we covered an intro to Illustrator software. We practiced drawing basic shapes and modifying them. Illustrator is a software for working with vector shapes. It is useful for designing logos because vectors keep their quality even when they are stretched. </p>
       <h3 class="blogDayNumber">Day 4</h3>
 <p>In day 4 we covered Adobe's InDesign software, which is used to create document layouts. We learned to use the basic tools and designed a business card. InDesign seems like the most straightforward software of the three.</p>
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
 </article><!--graphic design-->
 <!--web design-->
 <article>
@@ -71,6 +77,12 @@
 
 We also did an introduction to JavaScript where we used JavaScript click event handlers to load image backgrounds for an image gallery. I look forward to using JS more in the future to create galleries and dynamic menus.
 </p>
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
 </article><!--Web Design-->
 <!--WordPress-->
 <article>
@@ -81,6 +93,12 @@ We also did an introduction to JavaScript where we used JavaScript click event h
   <h3>Day 2</h3>
     <p>Today we went over how to install a WordPress application on the control panel and manually. Then we saw how to install various plug-ins such as security plug ins and gallery. We talked about WordPress security and how to make the application more robust. </p>
 </article><!--WordPress-->
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
 <article>
 <h2 id="mysql">Intro to MySQL</h2>
 <img src="images/blog/mysql.png" alt="MySQL logo" class="noBorderImg">
@@ -91,6 +109,12 @@ We also did an introduction to JavaScript where we used JavaScript click event h
     <img src="images/blog/newsletter.jpeg" alt="html code" class="blogImage">
     <p>Today we learned about Email coding using HTML and CSS. It is quite different to web page design because email clients can only read old HTML and CSS so we need to code with older HTML standards. For example, for layouts we should use tables. Also there is no recognition of ID for selecting CSS so we write inline CSS for design purposes. In class we coded a newsletter for the Training Dragon school.</p>
 </article><!--html newsletter-->
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
 <article>
 <h2 id="fedevtools">Front-end developer tools</h2>
 <img src="images/blog/frontend.jpeg" alt="coding picture" class="blogImage">
@@ -104,12 +128,21 @@ We also did an introduction to JavaScript where we used JavaScript click event h
 <h3>Day 4 - SASS</h3>
   <p>Today we learned about SASS which is a new way to write CSS. SASS code gets compiled into CSS. It seems more flexible than CSS because you can create variables and loops and other interesting techniques like mixins. CSS by itself can be a bit too repetitive but SASS looks like a programming language for CSS, which looks more powerful. </p>
   <h3> Day 5 - Bootstrap</h3>
-    <p>Today we learned about Bootstrap and how to create interfaces with it. It seems quite straightforward to use and also quite useful and comprehensive. </p>
+<p>Today we learned about Bootstrap and how to create interfaces with it. It seems quite straightforward to use and also quite useful and comprehensive. </p>
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
+</article><!--front end developer tools-->
+<article>
 <h2 id="intro-to-programming" class="blog-title">Introduction to Programming</h2>
 <img src="images/blog/flowchart.jpeg" alt="flow chart" class="blogImage">
   <p>Today we had an introduction to programming concepts such as planning and designing the solution prior to writing code.
 I thought that was useful because when you program sometimes the most difficult part is not writing the code but knowing exactly what steps to take to solve the problems. We also talked about splitting the problem into small parts. </p>
-</article><!--front end developer tools-->
+</article><!--intro to programming-->
+
 <article>
 <h2 id="javascript-intro">JavaScript & jQuery</h2>
 <img src="images/blog/javascript.jpeg" alt="person writing code" class="blogImage">
@@ -119,6 +152,12 @@ I thought that was useful because when you program sometimes the most difficult 
     <p>Today we talked about jQuery, which is a library for JS. It makes writing JS and selecting the DOM faster.
 </p>
 </article><!--JavaScript-->
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
 <article>
 <h2>Advanced HTML5 and CSS3</h2>
   <img src="images/blog/HTML5.png" alt="HTML logo" class="noBorderImg">
@@ -131,6 +170,12 @@ I thought that was useful because when you program sometimes the most difficult 
   <h3>Day 4</h3>
   <p>Today we went through examples using the video API and also the canvas API. We also used CSS3 filters. </p>
 </article><!--Advanced HTML5-->
+<div class="toNav">
+<a href="#blog-title" class="linkToNav">
+  <img src="images/icons/arrow.png" alt="arrow icon" class="arrowIcon">
+  Back to top
+</a>
+</div><!--toNav-->
 
 </main>
 <footer>
@@ -142,6 +187,9 @@ I thought that was useful because when you program sometimes the most difficult 
     <p>Copyright &copy; James Bremner 2018</p>
 </div><!--social media-->
 </footer>
-
+<!--loading jQuery library here-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!--load external script here-->
+<script src="js/script.js"></script>
 </body>
 </html>
