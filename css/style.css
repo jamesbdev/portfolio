@@ -262,16 +262,7 @@ hr {
 
 }
 
-.linkToNav:hover{
-	border-bottom: 2px solid black;
 
-}
-
-.arrowIcon{
-	width: 50px;
-	display: block;
-	margin: 0 auto;
-}
 
 
 /****** Portfolio section ******/
@@ -323,7 +314,6 @@ hr {
   padding: 1em;
   width: 100%;
 	background-color: #fcf7fc;
-
 }
 
 .portfolio-img {
@@ -489,9 +479,17 @@ textarea {
 
 .button:hover {
   background-color: #4e1160;
+	color: white;
+}
+/* arrow icon */
 
-  color: white;
+.fas {
+	padding-bottom: 0.3em;
 
+}
+
+.fas:hover {
+	text-decoration: none;
 }
 
 @media screen and (max-width: 840px){

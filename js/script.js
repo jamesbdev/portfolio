@@ -7,39 +7,32 @@
 */
 function scrollToLink() {
       const root = $("html, body");
-
       $(".mainNavLink, .linkToNav").on("click", function(e){
         // disabling default behaviour for click events on our links
-        e.preventDefault();
-        //console.log(e);
         let target = e.target.getAttribute("href");
-        // console.log(target);
-
-        // animating whole website
-      root.animate(
-            {
+        if (target !== 'blog.html') {
+        e.preventDefault();
+      // animating whole website
+            root.animate(
+              {
               "scrollTop" : $(target).offset().top -10
-            },
+          },
             600
           );
+        };
+    });
 
-      });
+  };// scrollToLink
 
-    }// scrollToLink
-
-
-    const offset = 500;
-    const duration = 300;
-    const topOfDiv1 = $(".portfolio-container").offset().top;
-
+/**
+* @name hideDiv
+* @desc show and hide the back to top button depending on the scrolling position
+*/
     const hideDiv = function(){
-      // $(".toNav").hide();
-
-      // const portfolio = $('.portfolio-container');
-      // console.log(portfolio);
-
+      const duration = 300;
+      const topOfDiv1 = $(".portfolio-container").offset().top;
       $(window).scroll(function(){
-        if($(this).scrollTop() > offset){
+        if($(this).scrollTop() > 500){
           $('.toNav').fadeIn(200);
         } else {
           $('.toNav').fadeOut(200);
