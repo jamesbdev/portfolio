@@ -695,7 +695,9 @@ padding: 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	width: 90%;
+	margin: 1em auto;
 }
 
 .courseContainer{
@@ -705,9 +707,10 @@ padding: 1em;
 }
 
 .fab, .fas {
-	padding: 0.5em;
+	padding: 0.3em;
 	color: #4e1160;
 	border-radius: 0.5em;
+	border: 2px solid black;
 }
 
 .courseTitle {
@@ -719,6 +722,13 @@ padding: 1em;
 
 .blogSubheading {
 	font-size: 2em;
+}
+
+@media screen and (min-width: 750px) {
+  .courses {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
 }
 
 
