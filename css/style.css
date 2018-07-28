@@ -692,7 +692,7 @@ padding: 1em;
 }
 
 .courses {
-	display: flex;
+  display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -724,12 +724,27 @@ padding: 1em;
 	font-size: 2em;
 }
 
+.blogDescription {
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	margin: 1em 0;
+}
+
+.blogLink {
+	text-decoration: none;
+	color: black;
+}
+
+
 @media screen and (min-width: 750px) {
   .courses {
-		flex-direction: row;
-		flex-wrap: nowrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
+
+
 
 
 
