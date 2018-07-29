@@ -251,6 +251,7 @@ hr {
 	padding: 1em;
 	border-radius: 1em;
 	opacity: 0.5;
+
 }
 
 .linkToNav {
@@ -502,6 +503,10 @@ textarea {
 	fieldset{
 		width: 85%;
 	}
+}
+
+.backToTop {
+	margin-top: 1.2em;
 }
 
 
@@ -772,6 +777,12 @@ padding: 1em;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+}
+
+.backToMain i {
+	display: block;
+	margin: 0 auto;
+	border: none;
 }
 
 
