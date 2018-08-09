@@ -6,8 +6,8 @@
 * @desc to create a scrolling effect on links
 */
 const currentUrl = $(location).attr('href');
-console.log(currentUrl);
-const blogPageUrl = 'file:///Users/James/Documents/My%20Documents/Training%20Dragon/Courses/WD_2018_04_16/Web%20Design%20Home%20Project/blog1.html';
+  console.log(currentUrl);
+const blogPageUrl = 'file:///Users/James/Documents/My%20Documents/Training%20Dragon/Courses/WD_2018_04_16/Web%20Design%20Home%20Project/blog.html';
 const jqueryEffect = function(){
   $(".mainNavLink, .linkToNav").on("click", function(e){
 
@@ -28,24 +28,26 @@ const jqueryEffect = function(){
 }
   const scrollToLink = function(){
     //if not on blog page, select links from nav and link from other nav and apply jquery effect. Else if on blog only apply the jquery effect on the back to top link
-  if(currentUrl !== blogPageUrl){
-    jqueryEffect();
-}else{
-  $(".linkToNav").on("click", function(e){
+  if(currentUrl == blogPageUrl || currentUrl == 'blog.html'){
+    $(".linkToNav").on("click", function(e){
 
-    // disabling default behaviour for click events on our links
-    e.preventDefault();
-    let target = e.currentTarget.getAttribute("href");
-    console.log(target);
-   // animating whole website
-     $("html, body")
-      .animate(
-        {
-          "scrollTop" : $(target).offset().top -10
-        },
-        600
-      );
-     });//on click
+      // disabling default behaviour for click events on our links
+      e.preventDefault();
+      let target = e.currentTarget.getAttribute("href");
+      console.log(target);
+     // animating whole website
+       $("html, body")
+        .animate(
+          {
+            "scrollTop" : $(target).offset().top -10
+          },
+          600
+        );
+       });//on click
+
+}else{
+  jqueryEffect();
+
 
 
    }; //end of if else statement
