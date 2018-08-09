@@ -7,153 +7,98 @@
   <title>Blog</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
- </head>
-<body class="blog">
-
+</head>
+<body class="blog1">
   <header class="blog-header">
-    <nav class="main-nav">
+    <nav class="main-nav" id="nav">
       <ul>
         <li><a href="index.html#about" class="mainNavLink">About</a></li>
         <li><a href="index.html#portfolio" class="mainNavLink">Portfolio</a></li>
         <li><a href="index.html#skills" class="mainNavLink">Skills</a></li>
         <li><a href="index.html#contact" class="mainNavLink">Contact</a></li>
         <li><a href="blog.html" class="mainNavLink selected">Blog</a></li>
-      </ul>
+</ul>
   </nav>
 
   <div class="blog-description">
   <h1 class="blog-main-title">Blog</h1>
   <!-- <img src="images/blog.jpg" alt="pen notebook" class="blog-header-img"> -->
-  <p class="blog-description">This is a blog I wrote while attending the Web Design course at Training Dragon</p>
+  <!-- <p class="blog-description">This is a blog I wrote while attending the Web Design course at Training Dragon</p> -->
   </div>
+</header>
+  <main>
+<h2 class="blogSubheading">Courses</h2>
+<p class="blogDescription">This is a list of courses, which I attended at Training Dragon. Please click on a course to view the blog post.</p>
+<div class="courses">
+    <div class="courseContainer">
+      <!--logo-->
+      <a href="courses/web_design.html" class="blogLink">
+      <i class="fas fa-code fa-3x"></i>
+      <h3 class="courseTitle">Web Design</h3>
+      </a>
 
-  </header>
-  <nav class="blog-nav">
-    <h3 class="blogNavTitle">Blog sections:</h3>
-    <ul>
-      <li class="blog-nav-link"><a href="#graphic-design" class="blog-nav-link">Graphic Design</a></li>
-      <li><a href="#web-design" class="blog-nav-link">Web Design</a></li>
-      <li><a href="#intro-to-programming" class="blog-nav-link">Introduction to programming</a></li>
-      <li><a href="#javascript-intro" class="blog-nav-link">JavaScript & Jquery</a></li>
-      <li><a href="#fedevtools" class="blog-nav-link">Front-end development tools</a></li>
-      <li><a href="#mysql" class="blog-nav-link">Intro to MySQL</a></li>
-      <li><a href="#wordpress" class="blog-nav-link">WordPress</a></li>
-      <li><a href="#newsletter" class="blog-nav-link">Email newsletter</a></li>
-      <li><a href="#html5" class="blog-nav-link">Advanced HTML5 and CSS3</a></li>
-      <li><a href="#php" class="blog-nav-link">PHP and MySQL</a></li>
+    </div><!--courseContainer-->
+    <div class="courseContainer">
+      <a href="courses/wordpress.html" class="blogLink">
+      <i class="fab fa-wordpress fa-3x"></i>
+      <h3 class="courseTitle">WordPress</h3>
+    </a>
 
-    </ul>
-  </nav>
-<main>
-    <h1 class="welcomeTitle" id="blog-title">Welcome to my blog!</h1>
-    <article>
-      <h2 id="graphic-design">Graphic Design</h2>
-      <img src="images/blog/graphicdesign.png" alt="computer and pencils" class="blogImage">
+    </div><!--courseContainer-->
+    <div class="courseContainer">
+      <a href="courses/graphic_design.html" class="blogLink">
+      <i class="fas fa-paint-brush fa-3x"></i>
+      <h3 class="courseTitle">Graphic Design</h3>
+    </a>
+    </div><!--courseContainer-->
 
-      <h3 class="blogDayNumber">Day 1</h3>
-        <p>Today we talked about basic tools in Photoshop, such as how to draw shapes, colour them and how to write text and format it. The trainer also showed us how to set up a document for print. Later we started a small project to see how to use masking in photoshop. Masking is used to blend an image on another background. </p>
-      <h3 class="blogDayNumber">Day 2</h3>
-        <p>Today we covered how to select elements, clone parts of the image, how to cut an image from it’s background. How to take away parts of an image. We also covered editing tools like smudge and other tools to bring out more or take out light from a part of the picture. Finally we created a JPEG banner using effects and placing different images together.
-        </p>
-      <h3 class="blogDayNumber">Day 3</h3>
-        <p>In day 3 of the class we covered an intro to Illustrator software. We practiced drawing basic shapes and modifying them. Illustrator is a software for working with vector shapes. It is useful for designing logos because vectors keep their quality even when they are stretched. </p>
-      <h3 class="blogDayNumber">Day 4</h3>
-<p>In day 4 we covered Adobe's InDesign software, which is used to create document layouts. We learned to use the basic tools and designed a business card. InDesign seems like the most straightforward software of the three.</p>
+   <div class="courseContainer">
+     <a href="courses/frontend_dev_tools.html" class="blogLink">
+      <i class="fab fa-github fa-3x"></i>
+      <h3 class="courseTitle">Front end development tools</h3>
+    </a>
+    </div><!--courseContainer-->
+    <div class="courseContainer">
+      <a href="courses/intro_to_programming.html" class="blogLink">
+      <i class="fas fa-file-code fa-3x"></i>
+      <h3 class="courseTitle">Introduction to programming</h3>
+    </a>
+    </div><!--courseContainer-->
+    <div class="courseContainer">
+    <a href="courses/javascript.html" class="blogLink">
+      <i class="fab fa-js fa-3x"></i>
+    <h3 class="courseTitle">JavaScript & jQuery</h3>
+  </a>
+    </div><!--courseContainer-->
 
-  <div class="toNav">
-  <a href="#nav" class="linkToNav">
-  <i class="fas fa-angle-double-up fa-3x"></i>
-  <p>Back to top</p>
-</a>
-</div>
+  <div class="courseContainer">
+      <a href="courses/advanced_html5.html" class="blogLink">
+    <i class="fab fa-html5 fa-3x"></i>
+    <h3 class="courseTitle">Advanced HTML5 and CSS3</h3>
+  </a>
+  </div><!--courseContainer-->
+  <div class="courseContainer">
+      <a href="courses/intro_to_mysql.html" class="blogLink">
+    <i class="fas fa-database fa-3x"></i>
+    <h3 class="courseTitle">Intro to MySQL</h3>
+  </a>
+  </div><!--courseContainer-->
+  <div class="courseContainer">
+      <a href="courses/email_newsletter.html" class="blogLink">
+    <i class="fas fa-envelope fa-3x"></i>
+    <h3 class="courseTitle">Email Newsletter</h3>
+  </a>
+    </div><!--courseContainer-->
 
-</article><!--graphic design-->
-<!--web design-->
-<article>
-      <h2 id="web-design">Web Design</h2>
-        <img src="images/blog/webdesign-small.png" alt="computer code" class="blogImage">
-        <h3 class="blogDayNumber">Day 4</h3>
-          <p>Today we started creating our own web design projects. Firstly we created a drawing of our web page for confirmation by our trainer Emiliano. Once the drawing was okay we started creating the files and coding the layout for our website. I decided to make a one page portfolio website that I could use later. I discovered that CSS is more tricky than it looks and as our trainer mentioned it helps to practice a lot. I am going to continue working on the project we started in class and also take a look at reproducing web pages or magazines layout in HTML/CSS.</p>
-
-<p>I also learned about Flex-box to create layouts, going over the MDN documentation. It seems more handy than using floats for creating layouts.
-
-We also did an introduction to JavaScript where we used JavaScript click event handlers to load image backgrounds for an image gallery. I look forward to using JS more in the future to create galleries and dynamic menus.
-</p>
-</article><!--Web Design-->
-<!--WordPress-->
-<article>
-<h2 id="wordpress">WordPress</h2>
-<img src="images/blog/wordpress.jpeg" alt="working on WordPress" class="blogImage">
-  <h3>Day 1</h3>
-    <p>Today we had an introduction to WordPress CMS. We learned that there are two main WordPress systems: wordpress.com and wordpress.org. “.com” is easier for beginners but also more limited. Today we focused on .com. With our trainer Emiliano, we created a small website with different pages, a primary menu and a blog. We learned how to add videos with youtube, music with soundcloud and create a gallery. We also learned to place pictures in text and add links. I think WordPress is useful because it is easy to get a website up and running and looks pretty good out of the box. I’m looking forward to learn how to customise WordPress websites more tomorrow. </p>
-  <h3>Day 2</h3>
-    <p>Today we went over how to install a WordPress application on the control panel and manually. Then we saw how to install various plug-ins such as security plug ins and gallery. We talked about WordPress security and how to make the application more robust. </p>
-</article><!--WordPress-->
-
-<article>
-<h2 id="mysql">Intro to MySQL</h2>
-<img src="images/blog/mysql.png" alt="MySQL logo" class="noBorderImg">
-  <p>Today we learned about MySQL(Structured Query Language), which is a system to create databases and manipulate data. We looked at  how to create tables and extract information and how to create relationships between tables. I’m quite new to mySQL so I found it challenging as was lots of information to take in. We talked about LAMP stack which is Linux, Apache, Mysql and Php. We did an activity where we had to create a new database for a DVD store. I think I will need to go over the material again and do my own learning to better grasp the fundamentals of MySQL. </p>
-</article><!--intro to MySQL-->
-<article class="blog-article">
-    <h2 id="newsletter" class="blog-title">Email newsletter</h2>
-    <img src="images/blog/newsletter.jpeg" alt="html code" class="blogImage">
-    <p>Today we learned about Email coding using HTML and CSS. It is quite different to web page design because email clients can only read old HTML and CSS so we need to code with older HTML standards. For example, for layouts we should use tables. Also there is no recognition of ID for selecting CSS so we write inline CSS for design purposes. In class we coded a newsletter for the Training Dragon school.</p>
-</article><!--html newsletter-->
-
-<article>
-<h2 id="fedevtools">Front-end developer tools</h2>
-<img src="images/blog/frontend.jpeg" alt="coding picture" class="blogImage">
-  <h3>Day 1 - Git and Github</h3>
-    <p>Today we learned about Git and Github. We also had an overview of using the command line. It was quite comprehensive. We learned that using github we can work in teams on a same project. We can pull each other’s project and push to the main repository, which is where the project sits. Also it’s possible to create multiple branches and come back to earlier versions of the project.
-</p>
-<h3>Day 2 - node.js development tools</h3>
-  <p>Today we learned about Node.js development tools such as Gulp, Node Package Manager and Yarn and saw how they can help to automate and speed up the development workflow. We saw how to install node.js, which is a runtime environment that can run JavaScript on the server. We installed Node Package Manager and installed dependencies such as Jquery and also a browser window, which automatically update itself: “browsersync”. Emiliano recommended that we start using these tools as soon as possible so that we can become used to working with them and also because they can greatly help our workflow. </p>
-<h3>Day 3 - Responsive web</h3>
-  <p>Today we learned about mobile responsive design in other words how to style a website so that it works on multiple screens. It’s interesting that nowadays there are so many different screens available from large desktop computers to handheld phones and web sites and applications need to have a coherent format that works on each screen. There are many techniques to do that. We learned to use CSS grids to create responsive grids. Also there is a way of loading different pictures to fit different screens. The main technique to apply different CSS rules to different screens is to use media queries, which specify for which screen width specific CSS rules apply. </p>
-<h3>Day 4 - SASS</h3>
-  <p>Today we learned about SASS which is a new way to write CSS. SASS code gets compiled into CSS. It seems more flexible than CSS because you can create variables and loops and other interesting techniques like mixins. CSS by itself can be a bit too repetitive but SASS looks like a programming language for CSS, which looks more powerful. </p>
-  <h3> Day 5 - Bootstrap</h3>
-<p>Today we learned about Bootstrap and how to create interfaces with it. It seems quite straightforward to use and also quite useful and comprehensive. </p>
-
-</article><!--front end developer tools-->
-<article>
-<h2 id="intro-to-programming" class="blog-title">Introduction to Programming</h2>
-<img src="images/blog/flowchart.jpeg" alt="flow chart" class="blogImage">
-  <p>Today we had an introduction to programming concepts such as planning and designing the solution prior to writing code.
-I thought that was useful because when you program sometimes the most difficult part is not writing the code but knowing exactly what steps to take to solve the problems. We also talked about splitting the problem into small parts. </p>
-</article><!--intro to programming-->
-
-<article>
-<h2 id="javascript-intro">JavaScript & jQuery</h2>
-<img src="images/blog/javascript.jpeg" alt="person writing code" class="blogImage">
-  <h3>Day 1</h3>
-    <p>Today we had an introduction to JavaScript and the DOM. With JavaScript you can animate HTML and CSS elements such as changing the CSS or the content with HTML. We learned some ES6 variables like const and let, different types of loops such as for loop, for while, and switch. We learned about arrays and objects. We learned that objects have properties and methods, which we can access and create. </p>
-  <h3>Day 2</h3>
-    <p>Today we talked about jQuery, which is a library for JS. It makes writing JS and selecting the DOM faster.
-</p>
-</article><!--JavaScript-->
-
-<article>
-<h2>Advanced HTML5 and CSS3</h2>
-  <img src="images/blog/HTML5.png" alt="HTML logo" class="noBorderImg">
-  <h3>Day 1</h3>
-  <p>Introduction to HTML5 markup and Google maps API</p>
-  <h3>Day 2</h3>
-  <p>Today we talked about google maps api and we coded an application which shows our current location using the Google Maps API. We also had an introduction to using the canvas API. and drew squares using the API. </p>
-  <h3>Day 3</h3>
-  <p>Today we went more in depth into the canvas API to build a simple game. We also went through concepts of Object oriented programming and prototyping. </p>
-  <h3>Day 4</h3>
-  <p>Today we went through examples using the video API and also the canvas API. We also used CSS3 filters. </p>
-</article><!--Advanced HTML5-->
+</div><!--courses-->
 <div class="toNav">
-<a href="#nav" class="linkToNav">
+<a href="#nav" data-target="navigation" class="linkToNav">
 <i class="fas fa-angle-double-up fa-3x"></i>
-<p>Back to top</p>
+<p class="backToTop">Back to top</p>
 </a>
 </div><!--ToNav-->
-
 </main>
+</body>
 <footer>
   <div class="social-media" id="media">
     <a href="https://dribbble.com/" target="a_blank"><img src="images/social-media/social-1_logo-dribbble.svg" alt="dribble-icon"></a>
@@ -166,5 +111,5 @@ I thought that was useful because when you program sometimes the most difficult 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <!--load external script here-->
 <script src="js/script.js"></script>
-</body>
+
 </html>
