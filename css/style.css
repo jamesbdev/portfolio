@@ -330,6 +330,9 @@ hr {
 .closeArrow {
 	text-align: right;
 	padding-top: 0.5em;
+	width: 30%;
+	position: relative;
+	left: 30em;
 }
 
 @media only screen and (max-width: 720px){
@@ -483,6 +486,9 @@ textarea {
   padding: 1.3em 2em;
   text-transform: uppercase;
   width: 14em;
+	text-decoration: none;
+	color: black;
+	text-align: center;
 }
 
 .button:hover {
@@ -819,6 +825,7 @@ padding: 1em;
 	display: flex;
   flex-direction: column;
 	align-items: center;
+	padding: 1em 0;
 
 }
 
@@ -865,4 +872,8 @@ padding: 1em;
 	width: 60%;
 	margin: 0 auto;
 	display: block;
+}
+
+.goToWebsite {
+	margin-bottom: 2em;
 }
