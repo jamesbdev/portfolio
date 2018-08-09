@@ -10,7 +10,7 @@
 </head>
 <body class="blog1">
   <header class="blog-header">
-    <nav class="main-nav">
+    <nav class="main-nav" id="nav">
       <ul>
         <li><a href="index.html#about" class="mainNavLink">About</a></li>
         <li><a href="index.html#portfolio" class="mainNavLink">Portfolio</a></li>
@@ -19,12 +19,14 @@
         <li><a href="blog.html" class="mainNavLink selected">Blog</a></li>
 </ul>
   </nav>
+
   <div class="blog-description">
   <h1 class="blog-main-title">Blog</h1>
   <!-- <img src="images/blog.jpg" alt="pen notebook" class="blog-header-img"> -->
-  <p class="blog-description">This is a blog I wrote while attending the Web Design course at Training Dragon</p>
+  <!-- <p class="blog-description">This is a blog I wrote while attending the Web Design course at Training Dragon</p> -->
   </div>
 </header>
+  <main>
 <h2 class="blogSubheading">Courses</h2>
 <p class="blogDescription">This is a list of courses, which I attended at Training Dragon. Please click on a course to view the blog post.</p>
 <div class="courses">
@@ -90,11 +92,12 @@
 
 </div><!--courses-->
 <div class="toNav">
-<a href="#nav" class="linkToNav">
+<a href="#nav" data-target="navigation" class="linkToNav">
 <i class="fas fa-angle-double-up fa-3x"></i>
 <p class="backToTop">Back to top</p>
 </a>
 </div><!--ToNav-->
+</main>
 </body>
 <footer>
   <div class="social-media" id="media">
@@ -104,4 +107,9 @@
     <p>Copyright &copy; James Bremner 2018</p>
 </div><!--social media-->
 </footer>
+<!--loading jQuery library here-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!--load external script here-->
+<script src="js/script.js"></script>
+
 </html>

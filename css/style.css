@@ -260,6 +260,8 @@ hr {
 	font-family: Helvetica, Arial, sans-serif;
 	color: black;
 	font-weight: 500;
+	height: 40em;
+	width: 40em;
 
 }
 
@@ -323,6 +325,11 @@ hr {
 	height: auto;
   padding-top: 2em;
 	width: 80%;
+}
+
+.closeArrow {
+	text-align: right;
+	padding-top: 0.5em;
 }
 
 @media only screen and (max-width: 720px){
@@ -702,7 +709,7 @@ padding: 1em;
 	align-items: center;
 	justify-content: space-between;
 	width: 90%;
-	margin: 1em auto;
+	margin: 5em auto;
 }
 
 .courseContainer{
@@ -727,13 +734,14 @@ padding: 1em;
 
 .blogSubheading {
 	font-size: 2em;
+	margin: 1em 0;
 }
 
 .blogDescription {
 	text-align: center;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
-	margin: 1em 0;
+	margin: 2em 0;
 }
 
 .blogLink {
